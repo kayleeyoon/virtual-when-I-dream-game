@@ -1,0 +1,66 @@
+<script src="when_i_dream.js"></script>
+<head>
+  <title>When I Dream</title>
+  <link rel="stylesheet" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <h1 class="game--title">When I Dream</h1>
+  </section>
+ <div class="setup--containter">
+   <div class="settings">
+     Player Names: <textarea value="Kaylee" onchange="handlePlayerNameChange()" rows="2" ></textarea>
+     <br />
+     Number of Fairies: <input type="number" min="1" max="10" value=1 onchange="handlePlayerChange('fairy')"/>
+     <br />
+     Number of Boogeymen: <input type="number" min="1" max="10" value=1 onchange="handlePlayerChange('boogeyman')"/>
+     <br />
+     Number of Sandmen: <input type="number" min="1" max="10" value=1 onchange="handlePlayerChange('sandman')"/>
+   </div>
+   <br />
+
+   <div class="roles">
+     <button class="button" onclick="handleNewRound()">New Round</button>
+     <br /><br />
+     <b>Dreamer:</b> <div id="dreamer"></div> <div id="dreamer-role"></div>
+     <br />
+     <button class="button" onclick="revealRoles()">Reveal Other Roles</button>
+     <br /><br />
+     <section class="no--dreamer--view" id="no-dreamer-view">
+       <section class="column">
+         <b>Fairy:</b> <div id="fairy-player-list"></div>
+       </section>
+       <section class="column">
+         <b>Boogeyman:</b> <div id="boogeyman-player-list"></div>
+       </section>
+       <section class="column">
+         <b>Sandman:</b> <div id="sandman-player-list"></div>
+       </section>
+     </div>
+     <br />
+   </div>
+
+  <div>
+    <br /><br />
+    <button class="button" onclick="handleStartRound()">Start!</button>
+    <br /><br />
+    <div class="current--word" id="current-word"></div>
+    <br />
+    <button class="button" onclick="handleCorrectAnswer()">Correct</button>
+    <button class="button" onclick="handleIncorrectAnswer()">Incorrect</button>
+  </div>
+
+  <br />
+
+  <div class="finished--words">
+    <section class="correct--words">
+      Correct: <div id="correct-words"></div> <div id="num-correct"></div>
+    </section>
+
+    <section class="incorrect--words">
+      Incorrect: <div id="incorrect-words"></div> <div id="num-incorrect"></div>
+    </section>
+  </div>
+</body>

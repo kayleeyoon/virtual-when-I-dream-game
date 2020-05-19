@@ -1,0 +1,37 @@
+body {
+  font-family: 'Staatliches', cursive;
+  background: url('clouds.jpeg');
+  background-size: cover;
+}
+
+.button {
+  background-color: rgb(120, 180, 237);
+  border: 2px solid white;
+  cursor: pointer;
+  font-family: 'Staatliches', cursive;
+  margin: auto;
+}
+.correct--words {
+  color: #3c6e29;
+}
+.current--word {
+  font-size: 45px;
+}
+.incorrect--words {
+  color: #7a0518;
+}
+.no--dreamer--view {
+  display: none;
+}
+.correct--words {
+  width: 50%;
+  float: left;
+}
+.incorrect--words {
+  width: 50%;
+  float: right;
+}
+.column {
+  width: 33.33%;
+  float: left;
+}
