@@ -1,3 +1,3 @@
-# when-I-dream-online
+# virtual-when-I-dream-game
 Based on the game When I Dream
 https://www.whenidream.net/index.php?lang=en
