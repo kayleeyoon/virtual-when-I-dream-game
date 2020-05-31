@@ -84,9 +84,10 @@ function handleNewRound() {
 
   if (dreamerIndex < playerNames.length) {
     let nextDreamer = playerNames[dreamerIndex];
-    let dreamerRole = '(Sandman)'
+    let dreamerRole = ''
 
     let randomRoleIndex = Math.floor(Math.random() * 3);
+    console.log(randomRoleIndex);
     if (randomRoleIndex == 0) {
       dreamerRole = '(Fairy)';
       fairyList.push(nextDreamer);
@@ -94,6 +95,10 @@ function handleNewRound() {
     else if (randomRoleIndex == 1) {
       dreamerRole = '(Boogeyman)';
       boogeymenList.push(nextDreamer);
+    }
+    else {
+      dreamerRole = '(Sandman)';
+      sandmenList.push(nextDreamer);
     }
 
     document.getElementById('correct-words').innerHTML = correctWords;
