@@ -86,7 +86,7 @@ function handleNewRound() {
     let nextDreamer = playerNames[dreamerIndex];
     let dreamerRole = '(Sandman)'
 
-    let randomRoleIndex = Math.floor(Math.random() * 2);
+    let randomRoleIndex = Math.floor(Math.random() * 3);
     if (randomRoleIndex == 0) {
       dreamerRole = '(Fairy)';
       fairyList.push(nextDreamer);
@@ -392,7 +392,6 @@ var possibleWords = [
  'igloo',
  'internet',
  'ipad',
- 'it’s a boy/girl',
  'jacket',
  'jellyfish',
  'joke',
@@ -406,7 +405,6 @@ var possibleWords = [
  'kitten',
  'kiwi',
  'knee',
- 'kneel',
  'knight',
  'koala',
  'lace',
