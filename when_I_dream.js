@@ -21,7 +21,6 @@ var correctWords = [];
 
 function handlePlayerNameChange() {
   playerNames = event.target.value.trim(/\s+/g, '').split(",");
-  console.log(playerNames)
 }
 
 function handlePlayerChange(type) {
@@ -87,7 +86,6 @@ function handleNewRound() {
     let dreamerRole = ''
 
     let randomRoleIndex = Math.floor(Math.random() * 3);
-    console.log(randomRoleIndex);
     if (randomRoleIndex == 0) {
       dreamerRole = '(Fairy)';
       fairyList.push(nextDreamer);
